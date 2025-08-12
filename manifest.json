@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Time Management Extension",
+  "version": "0.0.1",
+  "description": "Replaces new tab with focus timer app",
+  "icons": {
+    "16": "assets/timer.svg",
+    "48": "assets/timer.svg",
+    "128": "assets/timer.svg"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": [
+    "storage",
+    "alarms",
+    "https://api.unsplash.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["*.js", "*.css", "*.html", "*.png", "*.jpg", "*.svg", "*.mp3"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

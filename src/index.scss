@@ -1,0 +1,64 @@
+@use 'styles/reset.scss';
+@use 'styles/global.scss';
+@use 'styles/var.scss';
+html {
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    font-size: inherit;
+}
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+    min-width: 320px;
+    /* min-height: 100vh; */
+    overflow-y: hidden;
+
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard */
+}
+#root {
+    width: 100%;
+    height: 100%;
+}
